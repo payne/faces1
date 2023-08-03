@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./face-card.component.scss']
 })
 export class FaceCardComponent {
+  imgUrl="https://payne.github.io/faces/Scott_Anderson.jpg";
+  personName="Scott";
+  possibleNames=["Scott","Tim","John","Jane"];
 
+  guessPerson(name:string){
+    if(name===this.personName){
+      alert("Correct!");
+    }else{
+      alert("Wrong!");
+    }
+  }
 }
